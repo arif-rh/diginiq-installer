@@ -104,16 +104,16 @@ class Installer
 		copy(VENDOR_CI4 . '/env', $env);
 
 		$mailEnv = "
-			#--------------------------------------
-			# EMAIL
-			#--------------------------------------
+#--------------------------------------
+# EMAIL
+#--------------------------------------
 
-			email.protocol = 'smtp'
-			email.SMTPHost = ''
-			email.SMTPUser = ''
-			email.SMTPPass = ''
-			email.SMTPPort = '587'
-			email.mailType = 'html'
+email.protocol = 'smtp'
+email.SMTPHost = ''
+email.SMTPUser = ''
+email.SMTPPass = ''
+email.SMTPPort = '587'
+email.mailType = 'html'
 		";
 
 		file_put_contents($env, $mailEnv, FILE_APPEND);
