@@ -139,7 +139,7 @@ email.mailType = 'html'
 	{
 		// main paths
 		$mainPaths = [
-			'$pathsPath' . " = FCPATH . '../app/Config/Paths.php';" => '$pathsPath' . " = FCPATH . '../../" . APP_DIR . "/Config/Paths.php';",
+			"realpath(FCPATH . '../app/Config/Paths.php');" => "realpath(FCPATH . '../../" . APP_DIR . "/Config/Paths.php');",
 		];
 
 		$index    = PUBLIC_DIR . '/index.php';
@@ -149,7 +149,7 @@ email.mailType = 'html'
 
 		// other paths
 		$newPaths = [
-			'$systemDirectory = __DIR__ . ' . "'/../../system';"     => '$systemDirectory = __DIR__ . ' . "'/../../" . VENDOR_CI4 . "/system';",
+			'$systemDirectory = __DIR__ . ' . "'/../../system';"     => '$systemDirectory = __DIR__ . ' . "'/../../../" . VENDOR_CI4 . "/system';",
 			'$writableDirectory = __DIR__ . ' . "'/../../writable';" => '$writableDirectory = __DIR__ . ' . "'/../../../writable';",
 			'$testsDirectory = __DIR__ . ' . "'/../../tests';"       => '$testsDirectory = __DIR__ . ' . "'/../../" . CI4_SYSTEM . "/tests';",
 		];
