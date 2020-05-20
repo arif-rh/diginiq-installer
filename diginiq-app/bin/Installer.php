@@ -288,7 +288,7 @@ class Installer
 	 */
 	private static function recursiveCopy(string $src, string $dst)
 	{
-		if (i!s_dir($dir))
+		if (! is_dir($dst))
 		{ 
 			mkdir($dst, 0755);
 		}
