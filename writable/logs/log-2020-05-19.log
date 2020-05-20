@@ -1,0 +1,35 @@
+CRITICAL - 2020-05-19 15:52:30 --> Argument 2 passed to Arifrh\Auth\Auth::resetPass() must be of the type string, null given, called in D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\app\Controllers\Auth.php on line 157
+#0 D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\app\Controllers\Auth.php(157): Arifrh\Auth\Auth->resetPass('6jAx269d36ewexh...', NULL, NULL)
+#1 D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\vendor\codeigniter4\framework\system\CodeIgniter.php(914): App\Controllers\Auth->resetPassword('6jAx269d36ewexh...')
+#2 D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\vendor\codeigniter4\framework\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\vendor\codeigniter4\framework\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\wamp64\www\personal\composer\packages\diginiq-starter\htdocs\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-05-19 20:36:56 --> Class 'App\Controllers\BaseController' not found
+#0 D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(365): require_once()
+#1 D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(340): CodeIgniter\Autoloader\Autoloader->requireFile('D:\\wamp64\\www\\p...')
+#2 D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(264): CodeIgniter\Autoloader\Autoloader->loadLegacy('Auth.php')
+#3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('Auth')
+#4 [internal function]: spl_autoload_call('Auth')
+#5 D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\vendor\codeigniter4\framework\system\Config\Config.php(122): class_exists('Auth')
+#6 D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\vendor\codeigniter4\framework\system\Config\Config.php(83): CodeIgniter\Config\Config::createClass('Auth')
+#7 D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\vendor\arif-rh\ci4-auth\src\Auth.php(106): CodeIgniter\Config\Config::get('Auth')
+#8 D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\vendor\arif-rh\ci4-auth\src\Auth.php(79): Arifrh\Auth\Auth->getConfig(NULL)
+#9 D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\app\Controllers\AuthController.php(43): Arifrh\Auth\Auth->__construct()
+#10 D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\app\Controllers\ProtectedController.php(23): App\Controllers\AuthController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#11 D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\vendor\codeigniter4\framework\system\CodeIgniter.php(887): App\Controllers\ProtectedController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#12 D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\vendor\codeigniter4\framework\system\CodeIgniter.php(395): CodeIgniter\CodeIgniter->createController()
+#13 D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\vendor\codeigniter4\framework\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#14 D:\wamp64\www\personal\composer\packages\diginiq-starter\htdocs\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#15 {main}
+CRITICAL - 2020-05-19 20:58:40 --> Class 'App\Controllers\BaseController' not found
+#0 D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(365): require_once()
+#1 D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('D:\\wamp64\\www\\p...')
+#2 D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#4 [internal function]: spl_autoload_call('App\\Controllers...')
+#5 D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\vendor\codeigniter4\framework\system\CodeIgniter.php(865): class_exists('\\App\\Controller...', true)
+#6 D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\vendor\codeigniter4\framework\system\CodeIgniter.php(390): CodeIgniter\CodeIgniter->startController()
+#7 D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\vendor\codeigniter4\framework\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp64\www\personal\composer\packages\diginiq-starter\htdocs\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}

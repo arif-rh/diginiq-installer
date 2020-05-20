@@ -1,0 +1,66 @@
+CRITICAL - 2020-05-17 07:29:40 --> Access denied for user ''@'localhost' (using password: NO)
+#0 D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\vendor\codeigniter4\framework\system\Database\BaseConnection.php(377): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1545): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1588): CodeIgniter\Database\BaseConnection->listTables()
+#4 D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\vendor\arif-rh\ci4-dynamic-model\src\DB.php(33): CodeIgniter\Database\BaseConnection->tableExists('settings')
+#5 D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\vendor\arif-rh\ci4-auth\src\Auth.php(111): Arifrh\DynaModel\DB::table('settings')
+#6 D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\vendor\arif-rh\ci4-auth\src\Auth.php(79): Arifrh\Auth\Auth->getConfig(NULL)
+#7 D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\app\Controllers\AuthController.php(44): Arifrh\Auth\Auth->__construct()
+#8 D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\vendor\codeigniter4\framework\system\CodeIgniter.php(887): App\Controllers\AuthController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#9 D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\vendor\codeigniter4\framework\system\CodeIgniter.php(395): CodeIgniter\CodeIgniter->createController()
+#10 D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\vendor\codeigniter4\framework\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\wamp64\www\personal\composer\packages\diginiq-starter\htdocs\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2020-05-17 09:45:19 --> Could not find table "settings".
+#0 D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\vendor\arif-rh\ci4-dynamic-model\src\DB.php(43): Arifrh\DynaModel\Exceptions\DBException::forTableNotFound('settings')
+#1 D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\vendor\arif-rh\ci4-auth\src\Auth.php(111): Arifrh\DynaModel\DB::table('settings')
+#2 D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\vendor\arif-rh\ci4-auth\src\Auth.php(79): Arifrh\Auth\Auth->getConfig(NULL)
+#3 D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\app\Controllers\AuthController.php(44): Arifrh\Auth\Auth->__construct()
+#4 D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\vendor\codeigniter4\framework\system\CodeIgniter.php(887): App\Controllers\AuthController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#5 D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\vendor\codeigniter4\framework\system\CodeIgniter.php(395): CodeIgniter\CodeIgniter->createController()
+#6 D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\vendor\codeigniter4\framework\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\wamp64\www\personal\composer\packages\diginiq-starter\htdocs\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-05-17 10:56:46 --> Undefined property: App\Controllers\Auth::$input
+#0 D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\app\Controllers\Auth.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\wamp64\\www\\p...', 7, Array)
+#1 D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\vendor\codeigniter4\framework\system\CodeIgniter.php(914): App\Controllers\Auth->login()
+#2 D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\vendor\codeigniter4\framework\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\vendor\codeigniter4\framework\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\wamp64\www\personal\composer\packages\diginiq-starter\htdocs\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-05-17 11:02:19 --> Undefined property: App\Controllers\Auth::$input
+#0 D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\app\Controllers\Auth.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\wamp64\\www\\p...', 7, Array)
+#1 D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\vendor\codeigniter4\framework\system\CodeIgniter.php(914): App\Controllers\Auth->login()
+#2 D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\vendor\codeigniter4\framework\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\vendor\codeigniter4\framework\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\wamp64\www\personal\composer\packages\diginiq-starter\htdocs\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-05-17 11:03:16 --> Undefined property: App\Controllers\Auth::$input
+#0 D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\app\Controllers\Auth.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\wamp64\\www\\p...', 7, Array)
+#1 D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\vendor\codeigniter4\framework\system\CodeIgniter.php(914): App\Controllers\Auth->login()
+#2 D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\vendor\codeigniter4\framework\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\vendor\codeigniter4\framework\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\wamp64\www\personal\composer\packages\diginiq-starter\htdocs\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-05-17 11:04:54 --> Undefined property: App\Controllers\Auth::$auth
+#0 D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\app\Controllers\Auth.php(14): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\wamp64\\www\\p...', 14, Array)
+#1 D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\vendor\codeigniter4\framework\system\CodeIgniter.php(914): App\Controllers\Auth->login()
+#2 D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\vendor\codeigniter4\framework\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\vendor\codeigniter4\framework\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\wamp64\www\personal\composer\packages\diginiq-starter\htdocs\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-05-17 16:31:34 --> Cannot declare class Arifrh\Auth\Database\Seeds\AuthSeeder, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-05-17 20:28:55 --> Undefined variable: collection
+#0 D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\vendor\arif-rh\ci4-auth\src\Config\Routes.php(9): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\wamp64\\www\\p...', 9, Array)
+#1 D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\vendor\codeigniter4\framework\system\Router\RouteCollection.php(423): include('D:\\wamp64\\www\\p...')
+#2 D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\vendor\codeigniter4\framework\system\Router\RouteCollection.php(529): CodeIgniter\Router\RouteCollection->discoverRoutes()
+#3 D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\vendor\codeigniter4\framework\system\Router\Router.php(395): CodeIgniter\Router\RouteCollection->getRoutes('get')
+#4 D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\vendor\codeigniter4\framework\system\Router\Router.php(174): CodeIgniter\Router\Router->checkRoutes('activate')
+#5 D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\vendor\codeigniter4\framework\system\CodeIgniter.php(789): CodeIgniter\Router\Router->handle('activate')
+#6 D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\vendor\codeigniter4\framework\system\CodeIgniter.php(360): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#7 D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\vendor\codeigniter4\framework\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp64\www\personal\composer\packages\diginiq-starter\htdocs\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}

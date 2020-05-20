@@ -1,0 +1,1 @@
+__ci_last_regenerate|i:1589777308;_ci_previous_url|s:39:"http://diginiq-app.local/reset-password";error|b:1;message|s:43:"Email for Reset Password failed to be sent.";__ci_vars|a:3:{s:5:"error";s:3:"old";s:7:"message";s:3:"old";s:13:"_ci_old_input";s:3:"old";}_ci_old_input|a:2:{s:3:"get";a:0:{}s:4:"post";a:1:{s:5:"email";s:23:"arman.is.nice@gmail.com";}}

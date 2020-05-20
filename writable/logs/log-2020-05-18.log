@@ -1,0 +1,36 @@
+CRITICAL - 2020-05-18 06:23:16 --> Argument 1 passed to CodeIgniter\HTTP\RedirectResponse::with() must be of the type string, array given, called in D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\app\Controllers\Auth.php on line 21
+#0 D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\app\Controllers\Auth.php(21): CodeIgniter\HTTP\RedirectResponse->with(Array)
+#1 D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\vendor\codeigniter4\framework\system\CodeIgniter.php(914): App\Controllers\Auth->login()
+#2 D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\vendor\codeigniter4\framework\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\vendor\codeigniter4\framework\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\wamp64\www\personal\composer\packages\diginiq-starter\htdocs\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-05-18 06:25:25 --> Call to undefined function bootstrap_alert()
+#0 D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\vendor\codeigniter4\framework\system\View\View.php(246): include()
+#1 D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\vendor\arif-rh\ci4-themes\src\Themes.php(426): CodeIgniter\View\View->render('header')
+#2 D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\app\Controllers\Auth.php(27): Arifrh\Themes\Themes::render('auth/login')
+#3 D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\vendor\codeigniter4\framework\system\CodeIgniter.php(914): App\Controllers\Auth->login()
+#4 D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\vendor\codeigniter4\framework\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#5 D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\vendor\codeigniter4\framework\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\wamp64\www\personal\composer\packages\diginiq-starter\htdocs\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-05-18 06:37:49 --> Invalid file: welcome.php
+#0 D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\vendor\codeigniter4\framework\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('welcome.php')
+#1 D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\vendor\codeigniter4\framework\system\Common.php(1087): CodeIgniter\View\View->render('welcome', Array, true)
+#2 D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\app\Controllers\Admin.php(11): view('welcome', Array)
+#3 D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\vendor\codeigniter4\framework\system\CodeIgniter.php(914): App\Controllers\Admin->index()
+#4 D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\vendor\codeigniter4\framework\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\vendor\codeigniter4\framework\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\wamp64\www\personal\composer\packages\diginiq-starter\htdocs\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-05-18 07:42:54 --> Call to undefined function set_value()
+#0 D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\vendor\codeigniter4\framework\system\View\View.php(246): include()
+#1 D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\vendor\codeigniter4\framework\system\Common.php(1087): CodeIgniter\View\View->render('auth/activate', Array, true)
+#2 D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\vendor\arif-rh\ci4-themes\src\Themes.php(587): view('auth/activate', Array)
+#3 D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\vendor\arif-rh\ci4-themes\src\Themes.php(409): Arifrh\Themes\Themes->setContent('auth/activate', Array)
+#4 D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\app\Controllers\Auth.php(92): Arifrh\Themes\Themes::render('auth/activate', Array)
+#5 D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\vendor\codeigniter4\framework\system\CodeIgniter.php(914): App\Controllers\Auth->activate('EBj59jj5516146T...')
+#6 D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\vendor\codeigniter4\framework\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#7 D:\wamp64\www\personal\composer\packages\diginiq-starter\diginiq-app\vendor\codeigniter4\framework\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp64\www\personal\composer\packages\diginiq-starter\htdocs\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
