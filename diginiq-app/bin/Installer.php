@@ -195,6 +195,7 @@ email.mailType = 'html'
 	private static function setupThemes()
 	{
 		copy(APP_BIN . '/Config/Themes.php', CONFIG_DIR . '/Themes.php');
+		copy(APP_BIN . '/Helpers/bootstrap_helper.php', APP_DIR . '/Helpers/bootstrap_helper.php');
 
 		self::recursiveCopy(BIN_PATH . '/themes', PUBLIC_DIR . '/themes');
 	}

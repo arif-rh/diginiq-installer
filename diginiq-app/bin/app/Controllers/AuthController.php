@@ -24,7 +24,7 @@ class AuthController extends Controller
 	 *
 	 * @var array
 	 */
-	protected $helpers = ['cookie'];
+	protected $helpers = ['bootstrap', 'cookie'];
 
 	/**
 	 * Auth Object
