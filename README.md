@@ -4,7 +4,12 @@
 
 1. `composer create-project arif-rh/diginiq-installer ci4-project` 
 2. `cd ci4-project`
-3. edit `.env` set app.baseURL to yours
+3. set app.baseURL
+4. set database configuration
+5. `php spark migrate --all`
+6. `php spark db:seed \\Arifrh\\Auth\\Database\\Seeds\\AuthSeeder`
+7. if want to generate dummy user, run `php spark db:seed \\Arifrh\\Auth\\Database\\Seeds\\UserSeeder`
+8. go to baseURL/register if want to create user from site
 
 ## Features
 

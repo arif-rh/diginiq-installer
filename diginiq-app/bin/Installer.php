@@ -194,6 +194,8 @@ email.mailType = 'html'
 	 */
 	private static function setupThemes()
 	{
+		copy(APP_BIN . '/Config/Themes.php', CONFIG_DIR . '/Themes.php');
+
 		self::recursiveCopy(BIN_PATH . '/themes', PUBLIC_DIR . '/themes');
 	}
 
