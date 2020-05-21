@@ -90,6 +90,8 @@ class Installer
 		self::setupThemes();
 
 		self::setupAuth();
+
+		self::updateAddons();
 	}
 
 	/**
@@ -215,6 +217,23 @@ email.mailType = 'html'
 		$extraRoute = file_get_contents($newRoutes);
 
 		file_put_contents($routes, $extraRoute, FILE_APPEND);
+	}
+
+	/**
+	 * Update Extra data for projects
+	 */
+	private static function updateAddons()
+	{
+		// Update README
+		$readme = BASE_PATH . '/README.md';
+		$note   = BIN_PATH . '/NOTE.md';
+
+		$newNote = file_get_contents($note);
+
+		file_put_contents($readme, $newNote, FILE_APPEND);
+
+		// copy Language Files
+		self::recursiveCopy(APP_BIN . '/Language', APP_DIR . '/Language');
 	}
 
 	/**
