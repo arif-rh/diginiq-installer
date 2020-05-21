@@ -41,5 +41,30 @@ class AuthController extends Controller
 		parent::initController($request, $response, $logger);
 
 		$this->auth = new Auth();
+
+		$this->request->setLocale($this->auth->config->siteLanguage);
+	}
+
+	/**
+	 * Switch Site Language
+	 *
+	 * @param string|null $language
+	 */
+	public function switchLang($language = null)
+	{
+		$lang = $this->auth->config->siteLanguage;
+
+		if (is_string($language) && in_array($language, config('App')->supportedLocales))
+		{
+			$configTable = \Arifrh\DynaModel\DB::table($this->auth->config->configTable);
+
+			$configTable->updateBy(['value' => $language], ['name' => 'site_language']);
+
+			$lang = $language;
+		}
+
+		$this->request->setLocale($lang);
+
+		return redirect()->to('/');
 	}
 }
