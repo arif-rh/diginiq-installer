@@ -9,7 +9,7 @@
 		"php": ">=7.2",
 		"arif-rh/ci4-auth": "^0.1",
 		"arif-rh/ci4-dynamic-model": "^0.3",
-		"arif-rh/ci4-themes": "^1.0",
+		"arif-rh/ci4-themes": "^1.1",
 		"codeigniter4/framework": "^4.0"
 	},
 	"require-dev": {
