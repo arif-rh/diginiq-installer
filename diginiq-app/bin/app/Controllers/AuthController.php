@@ -65,6 +65,6 @@ class AuthController extends Controller
 
 		$this->request->setLocale($lang);
 
-		return redirect()->to('/');
+		return redirect()->back();
 	}
 }
