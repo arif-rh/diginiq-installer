@@ -28,4 +28,32 @@ class ProtectedController extends AuthController
 			exit;
 		}
 	}
+
+	/**
+	 * Do migration to the latest db upgrade
+	 *
+	 * Note: It wil be more secure when moving this method to Super Admin group only
+	 *
+	 * @return void
+	 */
+	public function dbUpgrade()
+	{
+		$migrate = \Config\Services::migrations();
+
+		try
+		{
+			$migrate->latest();
+
+			$migration = \Arifrh\DynaModel\DB::table('migrations');
+			$status    = $migration->last();
+
+			$migrationStatus = "<h3>Migration Status</h3>Latest version ({$status['id']}) - {$status['version']}";
+
+			$this->themes::render($migrationStatus);
+		}
+		catch (\Exception $e)
+		{
+			// Do something with the error here...
+		}
+	}
 }
