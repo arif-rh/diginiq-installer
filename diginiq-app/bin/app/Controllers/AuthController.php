@@ -65,6 +65,8 @@ class AuthController extends Controller
 
 		$this->request->setLocale($lang);
 
-		return redirect()->back();
+		$prevURL = previous_url(true)->getPath();
+
+		return redirect()->to($prevURL);
 	}
 }
