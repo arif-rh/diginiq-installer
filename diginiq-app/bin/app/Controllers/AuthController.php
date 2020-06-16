@@ -42,7 +42,7 @@ class AuthController extends Controller
 
 		$this->auth = new Auth();
 
-		$this->request->setLocale($this->auth->config->siteLanguage);
+		\Config\Services::language($this->auth->config->siteLanguage);
 	}
 
 	/**
@@ -63,7 +63,7 @@ class AuthController extends Controller
 			$lang = $language;
 		}
 
-		$this->request->setLocale($lang);
+		\Config\Services::language($lang);
 
 		$prevURL = previous_url(true)->getPath();
 
