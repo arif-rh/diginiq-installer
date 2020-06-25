@@ -207,8 +207,9 @@ email.mailType = 'html'
 	 */
 	private static function setupAuth()
 	{
-		// copies Auth Controllers & views
+		// copies Auth Controllers, Database & views
 		self::recursiveCopy(APP_BIN . '/Controllers', APP_DIR . '/Controllers');
+		self::recursiveCopy(APP_BIN . '/Database', APP_DIR . '/Database');
 		self::recursiveCopy(APP_BIN . '/Views', APP_DIR . '/Views');
 
 		// add auth routes
@@ -230,7 +231,7 @@ email.mailType = 'html'
 
 		$newNote = file_get_contents($note);
 
-		file_put_contents($readme, $newNote, FILE_APPEND);
+		file_put_contents($readme, $newNote);
 
 		// copy Language Files
 		self::recursiveCopy(APP_BIN . '/Language', APP_DIR . '/Language');
