@@ -1,16 +1,14 @@
 
-## Setup
+## Installation Guide
 
 1. `composer install` 
 2. edit `.env` file to match your local development 
-   1. [required] set app.baseURL
-   2. [required] set database configuration
-   3. [required] set email smtp connection
-   4. [optional] set other custom local development environtment to match your need
+   - [ ] \(required) set app.baseURL
+   - [ ] \(required) set database configuration
+   - [ ] \(optional) set email smtp connection (if want to use email function)
+   - [ ] \(optional) set other custom local development environtment to match your need
 3. `php spark migrate --all`
 4. `php spark db:seed InitialDB`
-5. if want to generate dummy user, run `php spark db:seed \\Arifrh\\Auth\\Database\\Seeds\\UserSeeder`
-6. OR go to baseURL/register if want to create user from site
 
 ## Features
 
