@@ -65,8 +65,8 @@ class Installer
 		copy(VENDOR_CI4 . '/spark', $spark);
 
 		$sparkPath = [
-			"define('FCPATH', __DIR__ . '/public' . DIRECTORY_SEPARATOR);" => "define('FCPATH', __DIR__ . DIRECTORY_SEPARATOR . '" . PUBLIC_DIR . "' . DIRECTORY_SEPARATOR);",
-			"require 'app/Config/Paths.php';"                              => "require '" . CI4_SYSTEM . "/app/Config/Paths.php';",
+			"define('FCPATH', __DIR__ . DIRECTORY_SEPARATOR . 'public' . DIRECTORY_SEPARATOR);" => "define('FCPATH', __DIR__ . DIRECTORY_SEPARATOR . '" . PUBLIC_DIR . "' . DIRECTORY_SEPARATOR);",
+			"realpath('app/Config/Paths.php')"                                                  => "realpath('" . CI4_SYSTEM . "/app/Config/Paths.php')",
 		];
 
 		$contents = file_get_contents($spark);
@@ -141,7 +141,7 @@ email.mailType = 'html'
 	{
 		// main paths
 		$mainPaths = [
-			"realpath(FCPATH . '../app/Config/Paths.php');" => "realpath(FCPATH . '../../" . APP_DIR . "/Config/Paths.php');",
+			"realpath(FCPATH . '../app/Config/Paths.php')" => "realpath(FCPATH . '../../" . APP_DIR . "/Config/Paths.php')",
 		];
 
 		$index    = PUBLIC_DIR . '/index.php';
