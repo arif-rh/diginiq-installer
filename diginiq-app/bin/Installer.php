@@ -66,7 +66,7 @@ class Installer
 
 		$sparkPath = [
 			"define('FCPATH', __DIR__ . DIRECTORY_SEPARATOR . 'public' . DIRECTORY_SEPARATOR);" => "define('FCPATH', __DIR__ . DIRECTORY_SEPARATOR . '" . PUBLIC_DIR . "' . DIRECTORY_SEPARATOR);",
-			"realpath('app/Config/Paths.php')"                                                  => "realpath('" . CI4_SYSTEM . "/app/Config/Paths.php')",
+			'$pathsConfig = ' . "'app/Config/Paths.php';"                                       => '$pathsConfig = ' . "'" . APP_DIR . "/Config/Paths.php';",
 		];
 
 		$contents = file_get_contents($spark);
@@ -141,7 +141,7 @@ email.mailType = 'html'
 	{
 		// main paths
 		$mainPaths = [
-			"realpath(FCPATH . '../app/Config/Paths.php')" => "realpath(FCPATH . '../../" . APP_DIR . "/Config/Paths.php')",
+			'$pathsConfig = FCPATH . ' . "'../app/Config/Paths.php';" => '$pathsConfig = FCPATH . ' . "'../" . APP_DIR . "/Config/Paths.php';",
 		];
 
 		$index    = PUBLIC_DIR . '/index.php';
@@ -209,7 +209,7 @@ email.mailType = 'html'
 	{
 		// copies Auth Controllers, Database & views
 		self::recursiveCopy(APP_BIN . '/Controllers', APP_DIR . '/Controllers');
-		self::recursiveCopy(APP_BIN . '/Database', APP_DIR . '/Database');
+		self::recursiveCopy(APP_BIN . '/Database/Seeds', APP_DIR . '/Database/Seeds');
 		self::recursiveCopy(APP_BIN . '/Views', APP_DIR . '/Views');
 
 		// add auth routes
@@ -322,7 +322,7 @@ email.mailType = 'html'
 		);
 
 		foreach ($iterator as $file) {
-			if ($file->isDir()) 
+			if ($file->isDir())
 			{
 				mkdir($dst . '/' . $iterator->getSubPathName());
 			} 
