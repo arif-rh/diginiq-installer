@@ -141,7 +141,7 @@ email.mailType = 'html'
 	{
 		// main paths
 		$mainPaths = [
-			'$pathsConfig = FCPATH . ' . "'../app/Config/Paths.php';" => '$pathsConfig = FCPATH . ' . "'../" . APP_DIR . "/Config/Paths.php';",
+			'$pathsConfig = FCPATH . ' . "'../app/Config/Paths.php';" => '$pathsConfig = FCPATH . ' . "'../../" . APP_DIR . "/Config/Paths.php';",
 		];
 
 		$index    = PUBLIC_DIR . '/index.php';
