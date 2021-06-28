@@ -11,7 +11,7 @@ class DummyUser extends \CodeIgniter\Database\Seeder
 	 */
 	public function run()
 	{
-		$config = \CodeIgniter\Config\Config::get('Auth');
+		$config = \CodeIgniter\Config\Factories::config('Auth');
 
 		$adminPassword = 'admin@DIGINIQ#789';
 

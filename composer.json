@@ -7,7 +7,7 @@
 	"keywords": ["codeigniter4", "codeigniter4 installer", "codeigniter4 subfolder", "codeigniter4 sub directory", "codeigniter4 starter project"],
 	"require": {
 		"php": ">=7.2",
-		"arif-rh/ci4-auth": "^0.3",
+		"arif-rh/ci4-auth": "^0.4",
 		"arif-rh/ci4-dynamic-model": "^0.3",
 		"arif-rh/ci4-themes": "^1.1",
 		"codeigniter4/framework": "^4.1"
